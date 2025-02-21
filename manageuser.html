@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="manageuser.css">
+</head>
+<body>
+  <header class="admin-header">
+    <h1>Users</h1>
+  </header>
+
+  <img class="background" src="/asset/home-page-big-image-1.jpg" alt="background">
+
+  <nav class="sidebar">
+    <ul>
+      <li><a href="admindashboard.html" class="dashboard">Dashboard</a></li>
+      <li><a href="#users" class="users">Manage Users </a></li>
+      <li><a href="manageordes.html">Manage Orders</a></li>
+      <li><a href="customertickets.html">Tickets</a></li>
+      <li><a href="settings.html">Settings</a></li>
+      <li><a href="index.html" class="logout">Logout</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+
+    <section id="users" class="manage-users">
+      <h2>Manage Users</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>User ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>001</td>
+            <td>John Doe</td>
+            <td>john.doe@example.com</td>
+            <td><button class="btn">Edit</button> <button class="btn btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>Jane Smith</td>
+            <td>jane.smith@example.com</td>
+            <td><button class="btn">Edit</button> <button class="btn btn-danger">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

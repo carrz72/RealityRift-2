@@ -1,0 +1,264 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "test";
+  src: url("/fonts/SlimePersonalUseBold-gx3Dq.ttf");
+}
+@font-face {
+  font-family: "test2";
+  src: url("/fonts/Mollan-j9Lny.otf");
+}
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 1rem;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 0.1rem;
+  width: 0;
+  background: red;
+  position: absolute;
+  left: 0;
+  bottom: -0.1rem;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+  width: 100%;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: transparent;
+  color: white;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  height: 100%;
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 2);
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 1rem 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.account {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Main Container */
+.account-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: transparent;
+  border-radius: 8px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 2);
+}
+
+/* Section Titles */
+.account-container h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 0.2rem;
+}
+
+/* Profile Section */
+.profile-section {
+  margin-bottom: 2rem;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+}
+
+.profile-details p {
+  margin: 0.5rem 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn:hover {
+  background-color: #ff0000;
+}
+
+.btn-danger {
+  background-color: #f44336;
+}
+
+.btn-danger:hover {
+  background-color: #d32f2f;
+}
+
+/* Order Section */
+.orders-section {
+  margin-bottom: 2rem;
+}
+
+.order-list {
+  list-style: none;
+  padding: 0;
+}
+
+.order-list li {
+  background: #323232;
+  margin-bottom: 0.5rem;
+  padding: 0.8rem;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  text-align: center;
+  background-color: transparent;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.footer-text {
+  color: transparent;
+  font-size: 0.5rem;
+  text-align: right;
+  text-decoration: none;
+  margin: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-links {
+  color: white;
+  text-decoration: none;
+}
+.footer-links h2 {
+  color: white;
+  font-size: 0.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: rgb(82, 82, 82);
+}
+.footer ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 1rem; /* Can contribute to width overflow if elements are many or viewport is narrow */
+  position: relative;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.footer ul li::after {
+  content: "";
+  height: 0.1rem;
+  width: 0;
+  background: rgb(255, 0, 0);
+  position: absolute;
+  left: 0;
+  bottom: -0.1rem;
+  transition: 0.5s;
+}
+.footer ul li:hover:after {
+  width: 100%;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: center;
+}

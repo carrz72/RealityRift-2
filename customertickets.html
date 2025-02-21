@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="customertickets.css">
+</head>
+<body>
+  <header class="admin-header">
+    <h1>Customer Tickets</h1>
+  </header>
+
+  <img class="background" src="/asset/home-page-big-image-1.jpg" alt="background">
+
+  <nav class="sidebar">
+    <ul>
+      <li><a href="admindashboard.html" class="dashboard">Dashboard</a></li>
+      <li><a href="manageuser.html" class="users">Manage Users </a></li>
+      <li><a href="manageordes.html">Manage Orders</a></li>
+      <li><a href="customertickets.html" class="tickets">Tickets</a></li>
+      <li><a href="settings.html">Settings</a></li>
+      <li><a href="index.html" class="logout">Logout</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+
+    <section id="users" class="manage-users">
+      <h2>Customer Tickets</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>User ID</th>
+            <th>Name</th>
+            <th>Ticket</th>
+            <th>View</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>001</td>
+            <td>John Doe</td>
+            <td>Order not recived</td>
+            <td><button class="btn">View</button> </td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>Jane Smith</td>
+            <td>Not letting me order</td>
+            <td><button class="btn">View</button> </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

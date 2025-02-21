@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "test";
+  src: url("/fonts/SlimePersonalUseBold-gx3Dq.ttf");
+}
+@font-face {
+  font-family: "test2";
+  src: url("/fonts/Mollan-j9Lny.otf");
+}
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Header */
+.admin-header {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: transparent;
+  color: white;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  height: 100%;
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 2);
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 1rem 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.settings {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Main Content */
+.main-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: transparent;
+  border-radius: 8px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 2);
+}
+
+.dashboard .stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-box {
+  background-color: #4caf50;
+  color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.btn-danger {
+  background-color: #f44336;
+}
+
+.btn-danger:hover {
+  background-color: #d32f2f;
+}

@@ -1,0 +1,190 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: "test";
+  src: url("/fonts/SlimePersonalUseBold-gx3Dq.ttf");
+}
+@font-face {
+  font-family: "test2";
+  src: url("/fonts/Mollan-j9Lny.otf");
+}
+.header {
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 1rem;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 0.1rem;
+  width: 0;
+  background: red;
+  position: absolute;
+  left: 0;
+  bottom: -0.1rem;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+  width: 100%;
+}
+
+.product {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product h2 {
+  margin: 10px 0;
+}
+
+.product p {
+  color: #555;
+}
+
+.product .price {
+  color: #e74c3c;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.product button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.product button:hover {
+  background-color: #ff0000;
+}
+
+footer {
+  text-align: center;
+  background-color: transparent;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  padding: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.footer-text {
+  color: white;
+  font-size: 0.5rem;
+  text-align: left;
+  text-decoration: none;
+  margin: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-links {
+  color: white;
+  text-decoration: none;
+}
+.footer-links h2 {
+  color: white;
+  font-size: 0.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: rgb(82, 82, 82);
+}
+.footer ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 1rem; /* Can contribute to width overflow if elements are many or viewport is narrow */
+  position: relative;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.footer ul li::after {
+  content: "";
+  height: 0.1rem;
+  width: 0;
+  background: rgb(255, 0, 0);
+  position: absolute;
+  left: 0;
+  bottom: -0.1rem;
+  transition: 0.5s;
+}
+.footer ul li:hover:after {
+  width: 100%;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: center;
+}
